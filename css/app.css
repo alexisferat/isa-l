@@ -1,0 +1,237 @@
+body {
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: white;
+}
+
+/*
+ * Navbar
+ */
+nav {
+    min-height: 70px !important;
+    margin: 0px !important;
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.97) !important;
+}
+
+nav .container-fluid {
+	background-color: inherit !important;
+}
+
+.navbar-nav > li > a {
+	color: white !important;
+	transition: background-color 0.2s ease;
+}
+.navbar-nav > li > a:hover {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar-nav > li.active > a {
+	background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.navbar-brand {
+	color: white !important;
+	height: 70px;
+	line-height: 40px;
+	font-size: 0px;
+}
+.navbar-brand span {
+	font-size: 70px;
+}
+.navbar-brand:first-child {
+	font-weight: 600px;
+}
+
+@media (min-width: 768px) {
+	nav {
+    	background-color: rgba(0, 0, 0, 0.8) !important;
+	}
+
+	.navbar-brand {
+		margin-left: 8px !important;
+		border-left: 4px solid white;
+	}
+
+	.navbar-nav {
+		margin-right: 8px;
+	    border-right: 4px solid white;
+	}
+	.navbar-nav > li > a {
+		line-height: 40px;
+		font-size: 16px;
+	}
+}
+
+.navbar-toggle {
+	margin-top: 18px;
+	margin-bottom: 18px;
+	border: none;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+	background-color: transparent !important;
+}
+
+
+
+.container-fluid:not(.background) {
+	background-color: #212121;
+}
+.container-fluid .container {
+	padding: 32px 0px;
+}
+
+.background .row {
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.4);
+}
+.background h1 {
+	color: white;
+	font-size: 70px;
+	line-height: normal;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+#portraits img {
+	height: 100px;
+	margin: 0px auto;
+}
+
+#approach-paintings img {
+	height: 100px;
+	margin: 0px auto;
+}
+
+#carousel-gallery .item {
+	height: calc(100vh - 150px);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#carousel-gallery .carousel-control {
+	background: none;
+	transition: opacity 0.2s ease;
+	opacity: 0;
+}
+
+#carousel-gallery:hover .carousel-control {
+	opacity: 0.5;
+}
+
+#carousel-gallery .carousel-control:hover {
+	opacity: 1 !important;
+}
+
+#carousel-gallery .carousel-control:focus {
+	opacity: 0;
+}
+
+#carousel-gallery:hover .carousel-control:focus {
+	opacity: 0.5;
+}
+
+#carousel-gallery .carousel-control > span {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+}
+
+#carousel-gallery .carousel-caption {
+	width: 100%;
+	padding: 10px 0px;
+	left: 0px !important;
+	right: 0px !important;
+	bottom: 0px !important;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	font-weight: bold;
+}
+#carousel-gallery:hover .carousel-caption {
+	opacity: 1;
+}
+
+#carousel-gallery .carousel-caption .painting-number {
+	font-size: 16px;
+}
+
+#thumbs-container {
+	height: calc(100vh - 150px);
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-size: 0px;
+}
+
+.thumb {
+	width: 100px;
+	height: 100px;
+	margin: 8px;
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.thumb:first-child {
+	margin-top: 16px;
+}
+.thumb:last-child {
+	margin-bottom: 16px;
+}
+.thumb:hover, .thumb.active {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
+}
+.thumb.active {
+	cursor: default;
+}
+
+#social-links {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+#social-links img {
+	max-width: 180px;
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 0.5;
+	transition: opacity 0.2s ease, filter 0.2s ease;
+	filter: grayscale(1);
+	filter: gray;					/* IE 6-9 */
+	-webkit-filter: grayscale(1);	/* Chrome */
+	-moz-filter: grayscale(1);		/* Firefox */
+	-o-filter: grayscale(1);		/* Opera */
+	-ms-filter: grayscale(1);
+}
+
+#social-links img:hover {
+	opacity: 1;
+	filter: none;
+	filter: none;			/* IE 6-9 */
+	-webkit-filter: none;	/* Chrome */
+	-moz-filter: none;		/* Firefox */
+	-o-filter: none;		/* Opera */
+	-ms-filter: none;
+}
+
+#social-links > div {
+	height: 150px;
+	line-height: 150px;
+}
+
+footer {
+	padding: 8px 0px;
+	background-color: rgba(0, 0, 0, 0.97);
+}
