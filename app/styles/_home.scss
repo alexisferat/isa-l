@@ -2,29 +2,21 @@
 
   .hero {
     height: calc(100vh - 150px);
-    background: url('../images/161.jpg') no-repeat center;
+    position: relative;
+    background: #BCE4E4 url('../images/161.jpg') no-repeat center;
     background-size: cover;
-  }
-
-  .angle {
-    height: 60px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: #BCE4E4;
 
     &::after {
       content: '';
-      height: 150px;
-      display: block;
+      height: 200px;
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: -54px;
       z-index: -1;
-      background: inherit;
       transform-origin: 100%;
-      transform: skewY(-3.5deg);
+      transform: skewY(-3deg);
+      background-color: inherit;
     }
   }
 
@@ -49,16 +41,10 @@
   }
 
   .arrow-down {
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin: 0 auto;
     position: absolute;
     top: 25%;
     left: 50%;
-    border-right: 1px solid #706F6F;
-    border-bottom: 1px solid #706F6F;
-    transform: rotate(45deg) translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     transform-origin: top left;
   }
 

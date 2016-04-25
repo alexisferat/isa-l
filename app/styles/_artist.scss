@@ -1,0 +1,30 @@
+#artist {
+
+  > .row > [class*="col"] {
+    padding: 64px;
+  }
+
+  .primary {
+    color: white;
+    background-color: #DB3229;
+
+    h1 {
+      border-color: white;
+    }
+  }
+
+  .light {
+    background-color: #BCE4E4;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .portrait {
+    height: 600px;
+    background: url('../images/portrait.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+}

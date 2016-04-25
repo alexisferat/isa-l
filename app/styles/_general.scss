@@ -25,5 +25,45 @@ ul {
 h1 {
   text-transform: uppercase;
   border-bottom: 1px solid #706F6F;
+  margin: 32px 0;
 }
 
+figure {
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.arrow-down {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  &::before, &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #706F6F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    transform: translate(-34px, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-6px, -50%) rotate(-45deg);
+  }
+}
+
+p {
+  margin: 0 0 32px 0;
+}

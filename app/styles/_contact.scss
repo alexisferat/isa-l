@@ -1,0 +1,57 @@
+#contact {
+
+  input, textarea, button {
+    border: 1px solid #1D1D1B;
+  }
+
+  input, textarea {
+    margin: 0 0 16px 16px;
+    padding: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::-webkit-input-placeholder {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &::-moz-placeholder {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &:-moz-placeholder {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &:-ms-input-placeholder {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    text-transform: uppercase;
+    background: none;
+    padding: 16px 32px;
+    color: #DB3229;
+    font-weight: bold;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    color: #706F6F;
+    text-transform: uppercase;
+    margin-left: 32px;
+
+    img {
+      height: 36px;
+      margin-right: 8px;
+    }
+  }
+
+}

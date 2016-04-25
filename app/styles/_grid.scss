@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+}
+
+[class*="col"] {
+  display: block;
+  flex-grow: 1;
+
+  &.shrink {
+    flex-grow: 0;
+  }
+}
+
+.col-6 {
+  width: 50%;
+}
