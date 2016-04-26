@@ -26,31 +26,31 @@
 <body>
 
 <nav>
-  <a class="navbar-brand" href="#">ISA-L</a>
+  <a class="navbar-brand" href="#home">ISA-L</a>
   <ul class="menu">
     <li>
-      <a href="">Accueil</a>
+      <a href="#home">Accueil</a>
     </li>
     <li>
-      <a href="">Galerie</a>
+      <a href="#gallery">Galerie</a>
     </li>
     <li>
-      <a href="">Artiste</a>
+      <a href="#artist">Artiste</a>
     </li>
     <li>
-      <a href="">Contact</a>
+      <a href="#contact">Contact</a>
     </li>
   </ul>
 </nav>
 
 <section id="home">
   <div class="hero"></div>
-  <div class="headlines">
+  <div id="about" class="headlines">
     <div>
       <div class="headline-light">Action</div>
       <div class="headline-strong">Painting</div>
     </div>
-    <span class="arrow-down"></span>
+    <a class="arrow-down" href="#about"></a>
     <div>
       <div class="headline-light">Action</div>
       <div class="headline-strong">Dripping</div>
@@ -221,6 +221,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+<script src="scripts/anchorScroll.js"></script>
 <!-- endbuild -->
 </body>
 </html>

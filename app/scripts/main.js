@@ -1,7 +1,5 @@
-'use strict';
-
 $(function () {
 
-    
+  $('a[href*="#"]').anchorScroll();
 
 });
