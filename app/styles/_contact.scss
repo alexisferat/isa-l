@@ -39,6 +39,35 @@
     padding: 16px 32px;
     color: #DB3229;
     font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s cubic-bezier(0.7,0,0.9,1);
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+
+      &::before {
+        transform: scale3d(24, 48, 1);
+      }
+    }
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin: -15px 0 0 1px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #DB3229;
+      transform-origin: left center;
+      transform: scale3d(1, 2, 1);
+      transition: transform 0.3s, opacity 0.3s;
+      transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+    }
   }
 
   .location {

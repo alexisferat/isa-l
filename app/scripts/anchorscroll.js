@@ -1,3 +1,5 @@
+'use strict';
+
 $.fn.anchorScroll = function (opts) {
 
   let options = {
